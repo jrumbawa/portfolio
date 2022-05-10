@@ -1,15 +1,16 @@
 import styles from './Hero.module.css'
-import Button from '../base/Button'
 
 export default function Hero() {
   return (
     <header className={styles.header}>
-      <p className={styles.subtitle}>Jomar Rumbawa</p>
-      <h1 className={styles.title}>Creative thinking & modern innovating</h1>
-      <div>
-        <Button route="#" text="Work" />
-        <Button route="#" text="Resume" />
-      </div>
+      <p className={styles.name}>Jomar Rumbawa</p>
+      <h1 className={styles.title}>
+        Bringing ideas to reality and keeping them creative.
+      </h1>
+      <p className={styles.subtitle}>
+        I'm Jomar, a frontend developer who specializes in creating websites and
+        user interfaces.
+      </p>
     </header>
   )
 }
