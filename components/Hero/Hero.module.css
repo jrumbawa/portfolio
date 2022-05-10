@@ -2,11 +2,17 @@
   text-align: center;
 }
 
-.subtitle {
+.name {
   font-weight: 600;
+  font-size: 0.75em;
 }
 
 .title {
   font-weight: 700;
   line-height: 0.8;
+}
+
+.subtitle {
+  line-height: 1.2;
+  font-size: 0.75em;
 }
