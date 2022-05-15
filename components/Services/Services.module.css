@@ -1,0 +1,12 @@
+.serviceTitle {
+  font-weight: 600;
+}
+
+.serviceDescription {
+  line-height: 1.2;
+}
+
+.blueText {
+  color: dodgerblue;
+  padding-right: 1em;
+}
