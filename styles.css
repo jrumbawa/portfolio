@@ -1,0 +1,34 @@
+:root {
+  --paper: #f7f7f2;
+  --ink: #171816;
+  --muted: #5f625a;
+  --line: #b9bcb2;
+  --soft-line: #d9dbd3;
+  --surface: #ffffff;
+  --accent: #166534;
+  --accent-soft: #dff0dc;
+
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 56px;
+  --space-2xl: 72px;
+
+  --shadow: 6px 6px 0 var(--ink);
+  --page-width: 1120px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 1.55;
+}
