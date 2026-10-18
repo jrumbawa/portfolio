@@ -19,17 +19,23 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-      <h1>Frontend / Web Developer</h1>
-      <p>
-        I'm Jomar Rumbawa, a frontend developer focused on React and TypeScript.
-        I build responsive, accessible web interfaces — and with backend
-        knowledge, I can own a feature end to end.
-      </p>
+      <div class="hero">
+        <div>
+          <h1>Frontend / Web Developer</h1>
+        </div>
+        <p class="hero-copy">
+          <strong>INTRODUCTION</strong>
+          I build responsive, accessible web interfaces — and with backend
+          knowledge, I can own a feature end to end.
+        </p>
+      </div>
     </header>
     <main>
       <section id="work">
-        <p>01 / SELECTED WORK</p>
-        <h2>Things I've built, and what they do</h2>
+        <div class="section-head">
+          <p class="section-number">01 / SELECTED WORK</p>
+          <h2>Things I've built, and what they do</h2>
+        </div>
 
         <article>
           <p>PROJECT 01 - FEATURED</p>
@@ -69,8 +75,10 @@
         </article>
       </section>
       <section id="about">
-        <p>02 / ABOUT</p>
-        <h2>How I work, and what I work with</h2>
+        <div class="section-head">
+          <p class="section-number">02 / ABOUT</p>
+          <h2>How I work, and what I work with</h2>
+        </div>
         <p>[Introduction about yourself]</p>
         <p>CORE TOOLKIT</p>
         <ul>
@@ -81,12 +89,14 @@
           <li>Git & GitHub</li>
         </ul>
       </section>
-      <section id="contact">
-        <p>03 / CONTACT</p>
-        <h2>Let's build something useful</h2>
-        <a href="#">Email address</a>
-        <a href="#">GitHub profile</a>
-        <a href="#">LinkedIn profile</a>
+      <section id="contact" class="contact">
+        <p class="section-number">03 / CONTACT</p>
+        <div>
+          <h2>Let's build something useful</h2>
+          <a href="#">Email address</a>
+          <a href="#">GitHub profile</a>
+          <a href="#">LinkedIn profile</a>
+        </div>
       </section>
     </main>
     <footer>
