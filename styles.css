@@ -17,6 +17,8 @@
 
   --shadow: 6px 6px 0 var(--ink);
   --page-width: 1120px;
+
+  color-scheme: light dark;
 }
 
 *,
@@ -351,6 +353,20 @@ h2 {
   .contact-link {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #111310;
+    --ink: #f0f1eb;
+    --muted: #b5b8ae;
+    --line: #676b61;
+    --soft-line: #34372f;
+    --surface: #191c17;
+    --accent: #9bd58f;
+    --accent-soft: #243c25;
+    --shadow: 6px 6px 0 var(--accent);
   }
 }
 
