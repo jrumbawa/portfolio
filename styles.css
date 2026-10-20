@@ -33,6 +33,11 @@ body {
   line-height: 1.55;
 }
 
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
 header,
 main,
 footer {
@@ -62,10 +67,6 @@ header nav a {
   color: var(--ink);
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
-}
-
-header nav a:hover {
-  color: var(--accent);
 }
 
 .hero {
@@ -202,10 +203,6 @@ h2 {
   text-underline-offset: 5px;
 }
 
-.project-links a:hover {
-  color: var(--accent);
-}
-
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -282,15 +279,6 @@ h2 {
   color: var(--paper);
 }
 
-.contact-link:hover {
-  color: var(--accent);
-}
-
-.contact-link.primary:hover {
-  background: var(--accent);
-  color: var(--paper);
-}
-
 .footer {
   margin-top: var(--space-2xl);
   color: var(--muted);
@@ -302,4 +290,79 @@ h2 {
   border-top: 1px solid var(--line);
   padding-block: 28px;
   margin: 0;
+}
+
+@media (max-width: 760px) {
+  header,
+  main,
+  footer {
+    padding-inline: 14px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: 24px 0 64px;
+  }
+
+  section {
+    padding-block: var(--space-xl);
+  }
+
+  .section-head,
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .section-head {
+    margin-bottom: 28px;
+  }
+
+  .projects {
+    gap: 24px;
+  }
+
+  .project,
+  .project:first-child,
+  .project:nth-child(2),
+  .project:nth-child(3) {
+    grid-column: 1 / -1;
+    min-height: 320px;
+    margin-top: 0;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    margin-left: 0;
+  }
+
+  .skills li:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .project {
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+
+  .contact-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (hover: hover) {
+  header nav a:hover,
+  .project-links a:hover,
+  .contact-link:hover {
+    color: var(--accent);
+  }
+
+  .contact-link.primary:hover {
+    background-color: var(--accent);
+    color: var(--paper);
+  }
 }
